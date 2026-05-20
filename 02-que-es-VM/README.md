@@ -26,7 +26,7 @@ Es el software principal que controla todo el hardware y permite ejecutar progra
 
 El Sistema Operativo se instala dentro del disco duro físico y trabaja directamente con el hardware mediante el **Kernel**.
 
-> El Kernel es el único componente que puede comunicarse directamente con el hardware real. Ver [¿Qué es KERNEL?](/01-que-es-Kernel/README.md)
+> El Kernel es el único componente que puede comunicarse directamente con el hardware real. Ver: [¿Qué es KERNEL?](/01-que-es-Kernel/README.md)
 
 ---
 
@@ -77,7 +77,7 @@ Linux cree que tiene:
 
 # ¿Cómo funciona una VM?
 
-Para que una VM funcione, necesita instalar un Sistema Operativo ``(OS)` dentro de ella. Exactamente igual que una computadora normal.
+Para que una VM funcione, necesita instalar un Sistema Operativo `(OS)` dentro de ella. Exactamente igual que una computadora normal.
 
 Por ejemplo:
 
@@ -99,7 +99,7 @@ Ubuntu cree que está instalado en hardware real. Pero realmente:
 
 # ¿Qué es el Hipervisor?
 
-El **Hipervisor** es el programa encargado de crear y administrar máquinas virtuales. Se instala en la maquina física origianl
+El **Hipervisor** es el programa encargado de crear y administrar máquinas virtuales. Se instala en la maquina física original.
 
 Ejemplos:
 
@@ -182,7 +182,7 @@ kali-linux.vdi
 
 Ese archivo contiene:
 
-- El Sistema Operativo virtual
+- El Sistema Operativo virtual (`Windows`, `macOS`, `Linux`)
 - Los programas
 - Los archivos
 - Las configuraciones
