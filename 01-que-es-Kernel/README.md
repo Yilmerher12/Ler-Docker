@@ -14,19 +14,6 @@ Cuando encendemos la máquina, ocurre el siguiente proceso:
 
 > El Kernel vive dentro de una porción exclusiva de la memoria RAM, a la cual se le llama **Kernel Space**.
 
-```mermaid
-sequenceDiagram
-    participant Programa
-    participant Kernel
-    participant Hardware
-
-    Programa->>Kernel: System Call
-    Kernel->>Hardware: Guardar datos
-    Hardware-->>Kernel: OK
-    Kernel-->>Programa: Éxito
-```
-
-
 ### User Space y la interacción con el hardware
 
 El Kernel se encarga de cargar todos los demás programas en otra parte de la RAM llamada **User Space**.  
@@ -42,6 +29,19 @@ Cuando los programas que se encuentran en el **User Space** necesitan interactua
 3. El Kernel, que se encuentra en el **Kernel Space**, recibe la petición y la ejecuta, ya que es el único que tiene contacto directo y seguro con el hardware.
 4. Una vez se realiza la acción, el Kernel devuelve una señal de éxito al programa.
 5. El programa sale de la pausa y retoma su ejecución normal.
+
+
+```mermaid
+sequenceDiagram
+    participant Programa
+    participant Kernel
+    participant Hardware
+
+    Programa->>Kernel: System Call
+    Kernel->>Hardware: Guardar datos
+    Hardware-->>Kernel: OK
+    Kernel-->>Programa: Éxito
+```
 
 
 ### Ejemplo:
